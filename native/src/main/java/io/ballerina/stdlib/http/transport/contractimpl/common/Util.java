@@ -522,7 +522,8 @@ public class Util {
         return sslEngine;
     }
 
-    private static void setSniServerName(SSLConfig sslConfig, String host, SSLHandlerFactory sslHandlerFactory, SSLEngine sslEngine) {
+    private static void setSniServerName(SSLConfig sslConfig, String host, SSLHandlerFactory sslHandlerFactory,
+                                         SSLEngine sslEngine) {
         if (sslConfig.getSniHostName().isEmpty()) {
             sslHandlerFactory.setSNIServerNames(sslEngine, host);
         } else {

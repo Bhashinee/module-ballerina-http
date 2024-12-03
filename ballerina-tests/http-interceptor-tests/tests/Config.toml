@@ -1,4 +1,0 @@
-[[ballerina.auth.users]]
-username="bob"
-password="yyy"
-scopes=["read"]
